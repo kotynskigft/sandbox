@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 
-const ws = new WebSocket('ws://localhost:8080/', {
+const ws = new WebSocket('ws://ec2-18-195-117-245.eu-central-1.compute.amazonaws.com:8080/', {
   origin: 'https://websocket.org'
 });
 
