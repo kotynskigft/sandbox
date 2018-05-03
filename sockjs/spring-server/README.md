@@ -1,0 +1,1 @@
+Wondering what to use as base image? https://cleverbuilder.com/articles/java-docker-parent-image/
