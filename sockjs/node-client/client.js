@@ -1,16 +1,18 @@
-const SockJS = require('sockjs-client');
+const WebSocket = require('ws');
 
-var sock = new SockJS('https://mydomain.com/my_prefix');
- sock.onopen = function() {
-     console.log('open');
-     sock.send('test');
- };
+var sock = new WebSocket('ws://localhost:8080/ws/counter');
 
- sock.onmessage = function(e) {
-     console.log('message', e.data);
-     sock.close();
- };
+sock.onmessage = e => {
+    console.log(`The answer is ${e.data}`);
+    sock.close();
+};
 
- sock.onclose = function() {
-     console.log('close');
- };
+sock.onopen = () => {
+    console.log(`on open.`);
+    sock.send("what is the answer?");
+};
+
+sock.onclose = (evt) => {
+    console.log(`close`);
+};
+
