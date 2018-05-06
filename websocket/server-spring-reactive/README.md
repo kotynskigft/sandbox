@@ -1,5 +1,7 @@
+# How to run
 Run server locally: mvnw spring-boot:run
 
-Java code based partially on https://youtu.be/GlvyHIqT3K4
+## Notes
+Java code inspired by https://youtu.be/GlvyHIqT3K4
 
-Wondering what to use as base image? https://cleverbuilder.com/articles/java-docker-parent-image/
+BTW Wondering what to use as the base image for docker? https://cleverbuilder.com/articles/java-docker-parent-image/
