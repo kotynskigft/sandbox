@@ -17,6 +17,6 @@ sock.onerror = (err) => {
 }
 
 sock.onclose = (evt) => {
-    console.log(`close`);
+    console.log(`on close`);
 };
 
