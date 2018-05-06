@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sockjs-client": "^1.1.4",
-    "sockjs-client-node": "^1.0.0",
     "ws": "^5.1.1"
   }
 }
