@@ -28,7 +28,7 @@ public class WebSocketConfiguration {
     HandlerMapping hm () {
         val suhm = new SimpleUrlHandlerMapping();
         suhm.setOrder(10);
-        suhm.setUrlMap(Collections.singletonMap("/ws/counter", wsh()));
+        suhm.setUrlMap(Collections.singletonMap("/ws/oracle", wsh()));
         return suhm;
     }
 }
