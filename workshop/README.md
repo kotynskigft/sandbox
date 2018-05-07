@@ -2,7 +2,7 @@
 Simple database-based project with spaghetti code
 
 # How to run?
-mvnw exec:java
+mvnw compile exec:java
 
 # What functionality is in the app?
 It is an appointments organizer.
